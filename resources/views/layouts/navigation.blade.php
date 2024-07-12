@@ -3,8 +3,27 @@
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-      <a class="navbar-brand mr-auto" href="#"><img src="{{ asset('assets/img/logo_brand.png') }}" height="60px;"> GBM Portal</a>
 
+      <a class="navbar-brand mr-auto" href="#">
+        <img src="{{ asset('assets/img/logo_brand.png') }}" height="60px;"> GBM Portal
+    </a>
+    <button class="js-toggle-fullscreen-btn toggle-fullscreen-btn" aria-label="Enter fullscreen mode" hidden>
+        <svg class="toggle-fullscreen-svg" width="28" height="28" viewBox="-2 -2 28 28">
+            <g class="icon-fullscreen-enter">
+                <path d="M 2 9 v -7 h 7" />
+                <path d="M 22 9 v -7 h -7" />
+                <path d="M 22 15 v 7 h -7" />
+                <path d="M 2 15 v 7 h 7" />
+            </g>
+
+            <g class="icon-fullscreen-leave">
+                <path d="M 24 17 h -7 v 7" />
+                <path d="M 0 17 h 7 v 7" />
+                <path d="M 0 7 h 7 v -7" />
+                <path d="M 24 7 h -7 v -7" />
+            </g>
+        </svg>
+    </button>
       <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GBM Portal</h5>
